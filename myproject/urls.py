@@ -20,6 +20,8 @@ from users import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
 
+from collage_bot.views import chat
+
 
 
 urlpatterns = [
@@ -41,6 +43,7 @@ urlpatterns = [
     path('notifications/', include('notification.urls')),
     path('chats/', include('chat.urls')),
     path('friend/', include('friend.urls', namespace='friend')),
+    path('bot/', chat, name = "bot"),
 ]
 
 if settings.DEBUG:

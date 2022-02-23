@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-crispy-forms = "*"
+django-cleanup = "*"
+django-ckeditor = "*"
+channels = "*"
+django-allauth = "*"
+Django = "*"
+Pillow = "*"
+python-dotenv = "*"
+pandas = "*"
+sklearn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
