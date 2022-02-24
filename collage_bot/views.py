@@ -7,8 +7,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Create your views here.
+InputTraffic = []
 
-
+welcomeResponse = []
 df_path = os.path.join(settings.BASE_DIR, 'dataset\db2.csv')
 df = pd.read_csv(df_path,
                  header=0,
